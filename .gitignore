@@ -1,3 +1,2 @@
-volume
-
+volume/*
 !volume/.gitkeep
