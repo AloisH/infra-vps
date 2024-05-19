@@ -13,6 +13,8 @@ services:
     volumes:
       - ./volume-nexus:/nexus-data
     restart: always
+    networks:
+      - infra-vps
   caddy:
     image: caddy:latest
     container_name: caddy
@@ -25,3 +27,10 @@ services:
     volumes:
       - ./volume-caddy/Caddyfile:/etc/caddy/Caddyfile
     restart: always
+    networks:
+      - infra-vps
+
+networks:
+  infra-vps:
+    external:
+      name: infra-vps
