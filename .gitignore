@@ -1,2 +1,6 @@
 volume-nexus/*
 !volume-nexus/.gitkeep
+
+volume-caddy/*
+!volume-caddy/.gitkeep
+!volume-caddy/Caddyfile

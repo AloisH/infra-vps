@@ -1,3 +1,7 @@
 registry.heloir.dev {
-    reverse_proxy nexus:8081
+	reverse_proxy nexus:8081
+}
+
+heloir.dev {
+	reverse_proxy portfolio-2024:80
 }
