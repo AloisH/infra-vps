@@ -1,5 +1,5 @@
 registry.heloir.dev {
-	reverse_proxy nexus:8081
+	reverse_proxy registry-ui:1100
 }
 
 heloir.dev {

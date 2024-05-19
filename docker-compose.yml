@@ -1,4 +1,21 @@
 services:
+  registry:
+    image: registry:latest
+    container_name: registry
+    networks:
+      - infra-vps
+    volumes:
+      - ./volume-registry:/var/lib/registry
+  registry-ui:
+    image: konradkleine/docker-registry-frontend:latest
+    container_name: registry-ui
+    ports:
+      - 1100:80
+    networks:
+      - infra-vps
+    environment:
+      ENV_DOCKER_REGISTRY_HOST: registry
+      ENV_DOCKER_REGISTRY_PORT: 5000
   caddy:
     image: caddy:latest
     container_name: caddy
