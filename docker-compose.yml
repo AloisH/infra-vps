@@ -1,19 +1,4 @@
 services:
-  nexus:
-    image: sonatype/nexus3:latest
-    container_name: registry
-    expose:
-      - 8081
-      - 8082
-      - 8083
-    ports:
-      - "8081:8081"
-      - "8082:8082"
-      - "8083:8083"
-    volumes:
-      - ./volume-nexus:/nexus-data
-    networks:
-      - infra-vps
   caddy:
     image: caddy:latest
     container_name: caddy
