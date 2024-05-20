@@ -9,8 +9,6 @@ services:
   registry-ui:
     image: joxit/docker-registry-ui:latest
     container_name: registry-ui
-    ports:
-      - 1100:80
     networks:
       - infra-vps
     environment:
