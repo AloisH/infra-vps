@@ -35,6 +35,8 @@ services:
     volumes:
       - ./volume-portainer:/data
       - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - infra-vps
   caddy:
     image: caddy:latest
     container_name: caddy
