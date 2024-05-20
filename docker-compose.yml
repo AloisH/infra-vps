@@ -6,6 +6,11 @@ services:
       - infra-vps
     volumes:
       - ./volume-registry:/var/lib/registry
+      - ./auth:/auth
+    environment:
+      - REGISTRY_AUTH=htpasswd
+      - REGISTRY_AUTH_HTTPASSWD_REALM="Registry Realm"
+      - REGISTRY_AUTH_HTPASSWD_PATH=/auth/httpasswd
   registry-ui:
     image: joxit/docker-registry-ui:latest
     container_name: registry-ui
