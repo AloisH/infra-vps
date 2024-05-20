@@ -1,3 +1,7 @@
+api-registry.heloir.dev {
+	reverse_proxy registry:5000
+}
+
 registry.heloir.dev {
 	reverse_proxy registry-ui:80
 }
