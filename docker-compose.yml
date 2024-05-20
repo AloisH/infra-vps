@@ -29,6 +29,11 @@ services:
       - TAGLIST_PAGE_SIZE=100
       - REGISTRY_SECURED=false
       - CATALOG_ELEMENTS_LIMIT=1000
+  portainer:
+    image: portainer/portainer-ce:latest
+    volumes:
+      - ./volume-portainer:/data
+      - /var/run/docker.sock:/var/run/docker.sock
   caddy:
     image: caddy:latest
     container_name: caddy

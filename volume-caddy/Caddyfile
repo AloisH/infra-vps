@@ -5,3 +5,7 @@ api-registry.heloir.dev {
 registry.heloir.dev {
 	reverse_proxy registry-ui:80
 }
+
+portainer.heloir.dev {
+	reverse_proxy portainer:9443
+}
