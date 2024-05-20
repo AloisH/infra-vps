@@ -10,7 +10,7 @@ services:
     environment:
       - REGISTRY_AUTH=htpasswd
       - REGISTRY_AUTH_HTPASSWD_REALM="Registry Realm"
-      - REGISTRY_AUTH_HTPASSWD_PATH=/auth/httpasswd
+      - REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd
   registry-ui:
     image: joxit/docker-registry-ui:latest
     container_name: registry-ui
