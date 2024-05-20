@@ -56,3 +56,4 @@ services:
 
 networks:
   infra-vps:
+    driver: bridge
