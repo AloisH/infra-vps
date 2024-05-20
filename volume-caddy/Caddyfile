@@ -5,7 +5,3 @@ api-registry.heloir.dev {
 registry.heloir.dev {
 	reverse_proxy registry-ui:80
 }
-
-heloir.dev {
-	reverse_proxy portfolio-2024:80
-}

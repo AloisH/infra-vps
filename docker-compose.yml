@@ -46,13 +46,6 @@ services:
     networks:
       - infra-vps
     restart: always
-  portfolio-2024:
-    build:
-      context: ./../atelier-heloir/.
-      dockerfile: Dockerfile.portfolio-2024
-    container_name: portfolio-2024
-    networks:
-      - infra-vps
 
 networks:
   infra-vps:
