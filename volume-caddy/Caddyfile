@@ -7,5 +7,5 @@ registry.heloir.dev {
 }
 
 portainer.heloir.dev {
-	reverse_proxy portainer:9443
+	reverse_proxy portainer:9000
 }
