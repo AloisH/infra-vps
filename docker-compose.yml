@@ -31,6 +31,7 @@ services:
       - CATALOG_ELEMENTS_LIMIT=1000
   portainer:
     image: portainer/portainer-ce:latest
+    container_name: portainer
     volumes:
       - ./volume-portainer:/data
       - /var/run/docker.sock:/var/run/docker.sock
